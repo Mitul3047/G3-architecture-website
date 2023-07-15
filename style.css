@@ -13,8 +13,10 @@
     border: 0;
     padding: 20px 24px;
     color: #FFF;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 600;
+    margin: 0 auto;
+    cursor: pointer;
 
 }
 
@@ -35,7 +37,7 @@ nav {
     align-items: center;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
 }
 
@@ -81,3 +83,34 @@ nav li a {
     /* 162.5% */
 }
 
+.banner-img{
+    width: 100%;
+    margin-top: 70px;
+}
+
+
+
+/* responsive */
+
+/* Mobile Devices */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px
+    }
+    nav  /*nav > ul*/ {
+        flex-direction: column;
+    }
+}
+
+
+/* Tablet */
+
+@media screen and (min-width:576px) and (max-width:996px) {
+    
+    header {
+        padding: 50px
+    }
+    nav  /*nav > ul*/ {
+        flex-direction: column;
+    }
+}
