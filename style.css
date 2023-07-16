@@ -19,7 +19,9 @@
     cursor: pointer;
 
 }
-
+/* .text-gray{
+    color: #727272 ; 
+} */
 /* body {
     margin: 0;
     width: 0;
@@ -92,7 +94,7 @@ nav li a {
 
 main {
     max-width: 1440px;
-    margin: 0px auto;
+    margin: 70px auto;
 }
 
 
@@ -160,12 +162,25 @@ main {
         padding: 20px
     }
 
-    nav
+    nav, .team-container
 
     /*nav > ul*/
         {
         flex-direction: column;
     }
+    
+    .team-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-content{
+        margin-bottom: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+       
+        
+    }
+
 }
 
 
@@ -177,10 +192,14 @@ main {
         padding: 50px
     }
 
-    nav
-
-    /*nav > ul*/
+    nav , .team-container
         {
         flex-direction: column;
     }
+
+    .team-container{
+        flex-direction: column-reverse;
+        
+    }
+    
 }
