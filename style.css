@@ -151,9 +151,69 @@ main>section {
 .team-title .team-feature {
     color: #FF900E;
     font-weight: 700;
+
 }
 
-/* card */
+
+/* features */
+
+.features {
+    display: flex;
+    gap: 130px;
+}
+
+.feature-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 3.5rem;
+    /* margin-top: 20px; */
+}
+
+.feature-text {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.feature-card-title {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.features .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px 30px;
+    margin-bottom: 20px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    text-align: center;
+    width: 342px;
+    padding: 40px;
+}
+
+.ten-years-badge h2 {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.ten-years-badge p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* factts*/
 
 .fact-description {
     color: #727272;
@@ -180,14 +240,16 @@ main>section {
     /* font-size: 2.8rem; */
     padding: 30px 30px;
     width: 240px;
-    
+
 }
+
 .fact-card-container .card-title {
     color: #727272;
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 5px;
 }
+
 .fact-card-container .card-stats {
     font-size: 2.8rem;
     color: #424242;
@@ -202,7 +264,7 @@ main>section {
     font-weight: 700;
 }
 
-.sponcer-img-container{
+.sponcer-img-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -212,7 +274,7 @@ main>section {
 }
 
 .sponcer-description {
-    color:#727272;
+    color: #727272;
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
@@ -220,7 +282,7 @@ main>section {
     max-width: 542px;
 }
 
-.sponcer-img-container img{
+.sponcer-img-container img {
     width: 164px;
 }
 
@@ -252,8 +314,7 @@ main>section {
 
     .team-content,
     .fact-card-container,
-    .sponcer-img-container
-    {
+    .sponcer-img-container {
         margin-bottom: 1rem;
         padding-left: 20px;
         padding-right: 20px;
@@ -275,10 +336,10 @@ main>section {
         padding: 50px
     }
 
-    nav,.sponcer-img-container,
+    nav,
+    .sponcer-img-container,
     .team-container,
-    .fact-card-container
-     {
+    .fact-card-container {
         flex-direction: column;
     }
 
@@ -289,8 +350,7 @@ main>section {
 
     .team-content,
     .fact-card-container,
-    .sponcer-img-container
-    {
+    .sponcer-img-container {
         margin-bottom: 1rem;
         padding-left: 20px;
         padding-right: 20px;
