@@ -19,6 +19,7 @@
     cursor: pointer;
 
 }
+
 /* .text-gray{
     color: #727272 ; 
 } */
@@ -56,7 +57,7 @@ nav li a {
     color: #424242;
 }
 
-.nav-title {
+.section-title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
@@ -96,7 +97,9 @@ main {
     max-width: 1440px;
     margin: 70px auto;
 }
-
+ main > section{
+    margin-bottom: 7.5rem;
+ }
 
 
 
@@ -130,7 +133,7 @@ main {
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.7rem;
     /* 162.5% */
 }
 
@@ -149,9 +152,47 @@ main {
     font-weight: 700;
 }
 
+/* card */
+
+.fact-description {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    /* 162.5% */
+    max-width: 542px;
+    margin-bottom: 6rem;
+}
+
+.fact-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 124px;
+}
 
 
+.fact-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    /* font-size: 2.8rem; */
+    padding: 30px;
+}
 
+.fact-card-container .card-stats {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fact-card-container .card-title {
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
 
 
 /* responsive */
@@ -162,23 +203,24 @@ main {
         padding: 20px
     }
 
-    nav, .team-container
+    nav,
+    .team-container
 
     /*nav > ul*/
         {
         flex-direction: column;
     }
-    
+
     .team-img {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .team-content{
+    .team-content {
         margin-bottom: 1rem;
         padding-left: 20px;
         padding-right: 20px;
-       
-        
+
+
     }
 
 }
@@ -192,14 +234,14 @@ main {
         padding: 50px
     }
 
-    nav , .team-container
-        {
+    nav,
+    .team-container {
         flex-direction: column;
     }
 
-    .team-container{
+    .team-container {
         flex-direction: column-reverse;
-        
+
     }
-    
+
 }
